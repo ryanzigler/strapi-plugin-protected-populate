@@ -6,7 +6,6 @@ module.exports = ({ strapi }) => {
     const fileData = fs.readFileSync(strapi.dirs.app.src + `/protected-populate/index.json`, {
       encoding: 'utf8',
     });
-    console.log(strapi.plugins)
     strapi.plugin('protected-populate').protectedRoutes = JSON.parse(fileData);
   } else {
     strapi.plugin('protected-populate').protectedRoutes = {};
@@ -118,7 +117,7 @@ module.exports = ({ strapi }) => {
     pathApiSplit.splice(0, 2);
     const pathApi = '/' + pathApiSplit.join('/');
     let routes = [];
-    for (const [_, api] of Object.entries(strapi.api)) {
+    for (const [_, api] of Object.entries(strapi.apis)) {
       for (const [_, route] of Object.entries(api.routes)) {
         routes.push(route.routes);
       }

@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-temp-fixed-fork-protected-populate",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Protects your populates from the url against bad actors.",
   "strapi": {
     "name": "protected-populate-fork",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:ryanzigler/strapi-plugin-protected-populate.git"
+    "url": "git+ssh://git@github.com/ryanzigler/strapi-plugin-protected-populate.git"
   },
   "license": "MIT",
   "author": "ryanzigler <66638608+ryanzigler@users.noreply.github.com>",

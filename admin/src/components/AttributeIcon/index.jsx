@@ -17,9 +17,9 @@ import {
   SingleType,
   TextField,
   UidField,
-  NumberField
+  NumberField,
 } from '@strapi/icons/symbols';
-import { useStrapiApp  } from '@strapi/admin/strapi-admin';
+import { useStrapiApp } from '@strapi/admin/strapi-admin';
 // TODO ADD BLOCKS field
 const iconByTypes = {
   biginteger: NumberField,
@@ -62,17 +62,20 @@ const IconBox = styled(Box)`
 `;
 
 const AttributeIcon = ({ type, customField, ...rest }) => {
-  //const customFieldsRegistry = useStrapiApp('ProtectedPopulate', (state) => state.customFields);
+  // const customFieldsRegistry = useStrapiApp('ProtectedPopulate', (state) => state.customFields);
 
   let Compo = iconByTypes[type];
 
-  if (customField) {
-    const { icon } = customFieldsRegistry.get(customField);
+  // console.log('customField', customField);
+  // if (customField) {
+  //   const field = customFieldsRegistry.get(customField);
 
-    if (icon) {
-      Compo = icon;
-    }
-  }
+  //   console.log('field', field);
+
+  //   if (field?.icon) {
+  //     Compo = field.icon;
+  //   }
+  // }
 
   if (!iconByTypes[type]) {
     return null;

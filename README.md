@@ -1,6 +1,9 @@
+> [!CAUTION]
+> This is a temporary fork of [strapi-plugin-protected-populate](https://github.com/strapi-community/strapi-plugin-protected-populate) meant only to fix an issue with custom component icons. Other than commenting out a few lines of code, all credit for this plugin goes to [Boegie19](https://github.com/Boegie19) and you almost certainly want to use their [original version of the plugin](https://github.com/strapi-community/strapi-plugin-protected-populate).
+
 <div align="center">
 <h1>Strapi Protected Populate Plugin</h1>
-    
+
 <p>
   <a href="https://discord.strapi.io">
     <img src="https://img.shields.io/discord/811989166782021633?color=blue&label=strapi-discord" alt="Strapi Discord">
@@ -27,6 +30,7 @@
 - [License](#license)
 
 ## 🚦 Current Status
+
 For more information on contributing please see [the contrib message below](#contributing).
 
 ## ✨ Features
@@ -44,13 +48,15 @@ I made this plugin since I got sick and tired of writing complex policies to do 
 ## 🖐 Requirements
 
 Supported Strapi Versions:
-Plugin  V2
-| Strapi Version | Supported | Tested On     |
-| -------------- | --------- | ------------- |
-| v4             | ❌        | N/A           |
-| v5             | ✅        | April 2023    |
+Plugin V2
+
+| Strapi Version | Supported | Tested On  |
+| -------------- | --------- | ---------- |
+| v4             | ❌        | N/A        |
+| v5             | ✅        | April 2023 |
 
 Plutin V1
+
 | Strapi Version | Supported | Tested On     |
 | -------------- | --------- | ------------- |
 | v3             | ❌        | N/A           |
@@ -82,7 +88,8 @@ WIP
 
 standard config
 add the following config to your config/plugins.js
-```js 
+
+```js
 module.exports = () => {
   return {
     'protected-populate': {
@@ -95,6 +102,7 @@ module.exports = () => {
 enable auto populate will automatically populate all fields and populates if no ctx.query.populate / ctx.query.fields is found.
 
 add the following config to your config/plugins.js
+
 ```js
 module.exports = () => {
   return {

@@ -1,9 +1,9 @@
 {
   "name": "strapi-plugin-temp-fixed-fork-protected-populate",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Protects your populates from the url against bad actors.",
   "strapi": {
-    "name": "protected-populate-fork",
+    "name": "protected-populate",
     "description": "Protects your populates from the url against bad actors if configured correctly.",
     "kind": "plugin",
     "displayName": "Protected Populate (Fork)"
